@@ -22,7 +22,7 @@ int create_drawable(struct Mesh *out_mesh, int vertex_count, GLfloat *floats) {
     glVertexAttribPointer(2, 3, GL_FLOAT, GL_FALSE, sizeof (GLfloat) * 8, (GLvoid*) (sizeof (GLfloat) * 5));
     
     glBindVertexArray(0);
-    glBindBuffer(0, GL_ARRAY_BUFFER);
+    glBindBuffer(GL_ARRAY_BUFFER, 0);
     
     struct Mesh mesh;
     mesh.vao = vao;
