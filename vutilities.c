@@ -1,7 +1,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <sys/stat.h>
-#include <windows.h>
+//#include <windows.h>
 
 static int fsize(FILE* fh) {
     int prev = ftell(fh);

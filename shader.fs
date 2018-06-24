@@ -1,5 +1,4 @@
-#version 430 core
-out vec4 outColor;
+#version 130
 
 in vec2 UV;
 in vec3 norm;
@@ -29,5 +28,5 @@ void main()
 {
 	vec2 pos = vec2(sin(Time), cos(Time));
 	float dt = max(0, dot(normalize(norm), normalize(vec3(pos.x,1,pos.y))));
-	outColor = vec4(correctGamma(vec3(dt)), 1);
+	gl_FragColor = vec4(correctGamma(vec3(dt)), 1);
 }

@@ -1,7 +1,7 @@
-#version 430 core
-layout(location = 0) in vec3 in_position;
-layout(location = 1) in vec2 texcoord;
-layout(location = 2) in vec3 normal;
+#version 130
+in vec3 in_position;
+in vec2 texcoord;
+in vec3 normal;
 
 out vec2 UV;
 out vec3 norm;
